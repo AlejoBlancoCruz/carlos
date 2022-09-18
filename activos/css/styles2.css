@@ -1,0 +1,103 @@
+/*
+
+Selectores  CSS
+    • Selectores simples
+        ◦ Selectores elementales
+            ▪ Selector Universal → *
+                • * {  background-color: red; } Todos los elementos son seleccionados
+* {
+    background-color: blue;
+}                
+            ▪ Selector de Tipo o etiqueta →
+                • h1 { background-color: red; }
+                • p { background-color: red; }
+p {
+    background-color: blue;
+}                
+
+        ◦ Selectores de Atributo
+            ▪ id → #id Ejemplo <h1 id=”title” /h1> ==> #title {  …...  }
+#center {
+    width: 100%;
+}
+            
+            ▪ clase →.clase Ejemplo <h1 class=”title” /h1> ==> .title {  …...  } 
+
+            ▪ Otros →
+                •  o   Ejemplos:
+                    ◦ [atributo] => [href]{ background-color: red;  }
+                    ◦ [atributo=valor] => [href=”https://google.com”] {background-color: red; }
+                    ◦ [atributo=empieza por valor] => [href^=”#color”] {background-color: red; } Acento circunflejo (^).
+                    ◦ [atributo=busca valor] => [href*=”color”] {background-color: red; } Busca el string en cualquier parte del valor
+                    ◦  [atributo=termina en valor] => [href$=”color”] {background-color: red; } Busca el string en el final del valor
+
+
+[href]{
+    background-color: blue;
+    color:aliceblue;
+}
+[href="formulario.html"]{
+    background-color: red;
+}
+[href^="https"]{
+    background-color: green;
+}
+[href*="youtube"]{
+    background-color: yellow;
+    color:black;
+}
+[href$="org/"]{
+    background-color: magenta;
+    color:black;
+}
+ */
+ 
+ body {
+    background-color: #333;
+    color: #fff;
+}   
+.block {
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;   
+    padding: 10px;
+    margin-bottom: 10px;   
+}
+.inline {
+    background-color: rgb(14, 238, 51);
+    color: inherit;  /* hereda del body */ 
+}
+p {
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+}   
+.buttons{
+    background-color: steelblue;
+    margin-top:10px;
+    margin-left: 200px;
+    margin-right:200px; 
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right:50px;
+    padding-bottom: 30px;
+
+}
+.button{
+   margin-top: 30px;
+   margin-left: 50px;
+   /* margin-right:50px; */
+   margin-bottom: 30px;
+   padding-left: 100px;
+   padding-right: 100px;
+   border: 20px groove red; 
+   /* border: width style color */
+
+}
+
+
